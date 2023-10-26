@@ -1,6 +1,6 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twocolumn,twoside,slovak,a4paper]{article}
+\documentclass[10pt,twoside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
@@ -32,16 +32,9 @@
 \maketitle
 
 \begin{abstract}
-Optimalizácia vyhľadávania je považovaná za kritický aspekt v oblasti správy údajov. Šesť kľúčových tém v rámci dátového indexovania je dôkladne skúmaných v tomto článku, pričom sa im prisudzuje významná úloha v pochopení a aplikácii tejto problematiky. Dátové indexovanie, ako fundamentálna technika, umožňuje efektívny prístup k informáciám v rozsiahlych datasetoch. Otázka presnosti vyhľadávania, ako aj otázka optimalizácie rýchlosti dátového indexovania, sú dôkladne analyzované. Novátorské prístupy v tejto oblasti sú taktiež opísané v tomto článku, takisto ako aj pohľad do budúcnosti, diskutujúc o predpovediach a trendoch súvisiacich s dátovým indexovaním a jeho vplyvom na efektívnosť vyhľadávania. Cieľom je poskytnúť komplexný prehľad tém, ktoré v súčasnosti dominujú diskusii o dátovom indexovaní, pričom sa usilujeme udržať kontext a zachovať informačnú hodnotu pre čitateľa.
+\ldots
 \end{abstract}
 
-\begin{figure*}[t]
-    \centering
-    \includegraphics[width=0.7\textwidth]{umletino.png}
-     \includegraphics[width=0.7\textwidth]{umletino1.png}
-    \caption{Grafy}
-    \label{fig:fullwidth}
-\end{figure*}
 
 
 \section{Úvod}
@@ -57,20 +50,15 @@ Záverečné poznámky prináša časť~\ref{zaver}.
 
 \section{Nejaká časť} \label{nejaka}
 
-
-
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=0.3\textwidth]{umletino.png}\hfill
-    \includegraphics[width=0.3\textwidth]{umletino1.png}
-    \caption{Popis diagramov}
-    \label{fig:diagrams}
-\end{figure}
-
-
 Z obr.~\ref{f:rozhod} je všetko jasné. 
 
-
+\begin{figure*}[tbh]
+\centering
+%\includegraphics[scale=1.0]{diagram.pdf}
+Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
+\caption{Rozhodujúci argument.}
+\label{f:rozhod}
+\end{figure*}
 
 
 
@@ -79,20 +67,6 @@ Z obr.~\ref{f:rozhod} je všetko jasné.
 Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
 
 Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
-
-
-\subsection{Nejaké vysvetlenie} \label{ina:nejake}
-
-Niekedy treba uviesť zoznam:
-
-\section{Nejaká časť} \label{nejaka}
-
-Z obr.~\ref{f:rozhod} je všetko jasné. 
-
-
-
-\section{Iná časť} \label{ina}
-
 
 
 \subsection{Nejaké vysvetlenie} \label{ina:nejake}
@@ -125,20 +99,11 @@ Ten istý zoznam, len číslovaný:
 \paragraph{Veľmi dôležitá poznámka.}
 Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
 
-\section{Zaujímavá časť}
-Zaujímavá poznámka ... 
 
-Ešte zaujímavejšia poznámka ...
 
 \section{Dôležitá časť} \label{dolezita}
 
-\begin{figure}[!h]
-\centerline{
-\includegraphics[width=0.5\textwidth,angle=90]{umletino.png}
-}
-\caption{Otočenie}
-\label{fig:example}
-\end{figure}
+
 
 
 \section{Ešte dôležitejšia časť} \label{dolezitejsia}
@@ -149,16 +114,11 @@ Ešte zaujímavejšia poznámka ...
 \section{Záver} \label{zaver} % prípadne iný variant názvu
 
 
+
 %\acknowledgement{Ak niekomu chcete poďakovať\ldots}
 
 
 % týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
-
 \bibliography{literatura}
-\bibliographystyle{abbrv} % prípadne alpha, abbrv alebo hociktorý iný
-\input{literatura.bib}
+\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
-
-
-
-
